@@ -8,9 +8,9 @@ import RPi.GPIO as gpio
 gpio.setwarnings(False)
 gpio.setmode(gpio.BCM)
 
-gm = gammu.getStateMachine() // Detection du dongle 3G
-gm.ReadConfig() // Lecture du fichier de configuration ("/etc/gammurc" & "/etc/gammu-smsdrc")
-gm.Init() // Initialisation du dongle
+gm = gammu.getStateMachine() # Detection du dongle 3G
+gm.ReadConfig() # Lecture du fichier de configuration ("/etc/gammurc" & "/etc/gammu-smsdrc")
+gm.Init() # Initialisation du dongle
 
 def send_sms(sms_target, sms_content):
     message = {
